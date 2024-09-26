@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Jayadi Wijaya</title>
+    <style>
+        /* Global Styles */
+        .profile-img {
+            width: 150px;
+            /* Ukuran lebar gambar */
+            height: 150px;
+            /* Ukuran tinggi gambar agar bentuk tetap bulat */
+            border-radius: 50%;
+            /* Membuat gambar menjadi bulat */
+            object-fit: cover;
+            /* Agar gambar pas di dalam lingkaran */
+            border: 2px solid #333;
+            /* Tambahkan border agar lebih menarik (opsional) */
+            display: block;
+            /* Memastikan gambar diatur sebagai block */
+            margin: 20px auto;
+            /* Agar gambar berada di tengah */
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .dark-theme {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-theme header,
+        .dark-theme footer {
+            background-color: #111;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .dark-theme h1,
+        .dark-theme h2,
+        .dark-theme h3 {
+            color: white;
+        }
+
+        p,
+        ul {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        button {
+            margin: 10px 5px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Sections */
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-theme section {
+            background-color: #444;
+        }
+
+        .dark-theme a {
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="foto/dirisendiri.jpg" alt="Foto Profil" class="profile-img">
+            <h1>Jayadi Ahmad Wijaya</h1>
+            <p>Web Developer | Software Engineer | Fullstack Developer</p>
+            <button id="toggleProfileBtn">Tampilkan/Sembunyikan Profil</button>
+            <button id="changeThemeBtn">Ubah Tema</button>
+        </div>
+    </header>
+    <!-- Profile -->
+    <section id="profile">
+        <div class="container">
+            <h2>Profil</h2>
+            <p>Saya adalah siswa SMK Telkom Malang, seorang Web Developer dalam membangun aplikasi web modern. Saya
+                memiliki keterampilan dalam HTML, CSS, PHP serta framework seperti React dan Node.js.</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2>Keterampilan</h2>
+            <ul>
+                <li>HTML, CSS,</li>
+                <li>React, Node.js,</li>
+                <li>PHP, Laravel</li>
+                <li>MySQL,</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <ul>
+                <li>Email: <a href="mailto: jayadi@example.com">johndoe@example.com</a></li>
+                <li>Telepon: +62 812 3456 7890</li>
+                <li>LinkedIn: <a href="#">linkedin.com/in/jayadi</a></li>
+                <li>Website: <a href="#">www.jayadi.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <div class="container">
+            <h2>Pengalaman Kerja</h2>
+            <div class="job">
+                <h3>Web Developer - XYZ Corp</h3>
+                <p><strong>Januari 2020 - Sekarang</strong></p>
+                <p>Merancang dan mengembangkan aplikasi web untuk perusahaan dengan menggunakan React, Node.js</p>
+            </div>
+            <div class="job">
+                <h3>Junior Developer - ABC Tech</h3>
+                <p><strong>Mei 2017 - Desember 2019</strong></p>
+                <p>Membangun dan memelihara fitur untuk platform e-commerce menggunakan PHP dan Laravel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <div class="education">
+                <h3>Sarjana Teknik Informatika - Universitas XYZ</h3>
+                <p><strong>2013 - 2017</strong></p>
+                <p>IPK: 3.85/4.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portofolio</h2>
+            <ul>
+                <li><a href="#">Proyek Aplikasi Web E-Commerce</a></li>
+                <li><a href="#">Proyek Dashboard Admin</a></li>
+                <li><a href="#">Website Portofolio Personal</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jayadi Wijaya. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="javascript/script.js"></script>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Menampilkan/Sembunyikan Profil
+    const toggleProfileBtn = document.getElementById('toggleProfileBtn');
+    const profileSection = document.getElementById('profile');
+
+    toggleProfileBtn.addEventListener('click', function () {
+        if (profileSection.style.display === 'none' || profileSection.style.display === '') {
+            profileSection.style.display = 'block';
+            toggleProfileBtn.textContent = 'Sembunyikan Profil';
+        } else {
+            profileSection.style.display = 'none';
+            toggleProfileBtn.textContent = 'Tampilkan Profil';
+        }
+    });
+
+    // Ubah Tema (Dark/Light)
+    const changeThemeBtn = document.getElementById('changeThemeBtn');
+    let isDarkTheme = false;
+
+    changeThemeBtn.addEventListener('click', function () {
+        if (!isDarkTheme) {
+            document.body.classList.add('dark-theme');
+            changeThemeBtn.textContent = 'Ubah ke Tema Terang';
+        } else {
+            document.body.classList.remove('dark-theme');
+            changeThemeBtn.textContent = 'Ubah ke Tema Gelap';
+        }
+        isDarkTheme = !isDarkTheme;
+    });
+});
+    </script>
+
+</body>
+
+</html>
